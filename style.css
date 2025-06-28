@@ -1,0 +1,103 @@
+:root {
+    --body-bg-color: #98a3d5 ;
+    --blue: #7087ee;
+    --blue-two: #4f5b91 ;
+}
+* {
+    margin: 0; /* define a área de margem nos quatro lados do elemento. */
+    padding: 0; /* define uma a distância entre o conteúdo de um elemento e suas bordas. */
+    font-weight: 600; /*  especifica o peso ou a intensidade da fonte (ex.: negrito). */
+    color: var(--blue); /* cor de acordo com a variavel. */
+    font-family: 'Poppins', sans-serif; /* tipo de fonte do elemento. */
+    font-weight: 300; /*  especifica o peso ou a intensidade da fonte (ex.: negrito).  */
+    user-select: none; /* serve para controlares que texto é que o utilizador pode ou não pode seleccionar. */
+    list-style: none; /* especifica o tipo de marcador de item de lista. */
+}
+body {
+    display: flex; /* define se um elemento é tratado como um bloco ou elemento inline e o layout usado para seus filhos. */
+    height: 100vh;  /* determina a altura da área.*/
+    padding: 1.5rem; /* define uma a distância entre o conteúdo de um elemento e suas bordas. */
+    font-weight: 600; /*  especifica o peso ou a intensidade da fonte (ex.: negrito). */
+    box-sizing: border-box; /* é utilizada para alterar a propriedade padrão da box model, usada para calcular larguras (widths) e alturas (heights) dos elementos. ( box model: conteudo do espaço). */
+    background-color: #98a3d5; /* cor do elemento. */
+    align-items: center; /* controla o alinhamento vertical. */
+    justify-content: center; /* Controla o alinhamento horizontal. */
+}
+.container {
+    display: flex; /* define se um elemento é tratado como um bloco ou elemento inline e o layout usado para seus filhos. */
+    align-items: center; /*  alinhamento de um certo item dentro do bloco que o contém. */
+    flex-direction: column; /* define como os itens flexíveis são colocados no contêiner flexível, definindo o eixo principal e a direção (normal ou invertido). */
+    width: 400px;  /* determina a largura da área. */
+    padding: 0.4rem; /* define uma a distância entre o conteúdo de um elemento e suas bordas. */
+    font-weight: 600; /*  especifica o peso ou a intensidade da fonte (ex.: negrito). */
+    box-sizing: border-box;  /* é utilizada para alterar a propriedade padrão da box model, usada para calcular larguras (widths) e alturas (heights) dos elementos. ( box model: conteudo do espaço). */
+}
+.image-contorno {
+    width: 156px;  /* determina a largura da área. */
+    height: 156px;  /* determina a altura da área. */
+    display: flex;  /*  para criar um contêiner flexível. */
+    align-items: center; /* controla o alinhamento vertical. */
+    justify-content: center; /* Controla o alinhamento horizontal. */
+    border-radius: 100%; /* deixar bordar redondas. */ 
+    border: 2px solid var(--blue-two);
+}
+.image-perfil {
+    max-width: 150px;
+    height: 150px;  /* determina a altura da área. */
+    border-radius: 100%; /* deixar bordar redondas. */ 
+    background-color: var(--blue-two); /* cor do elemento de acordo com a variavel. */
+    overflow: hidden; /* especifica quando o conteúdo de um elemento de nível de bloco deve ser cortado, exibido com barras de rolagem ou se transborda do elemento. */
+  
+}
+.image-perfil img {
+    height: 150px; /* determina a altura da área. */
+    width: 150px; /* determina a largura da área. */
+    object-fit: cover; /* especifica como o conteúdo de um elemento substituído deve ser ajustado à caixa estabelecida pela altura e largura usadas. */
+    object-position: 0rem 0rem; /* posição da imagem. */
+    
+}
+.ahoba {
+    font-size: 11pt;  /*  alterar o tamanho da fonte de seus textos. */
+    margin-top: 3rem; /* margem cima. */
+    margin-bottom: 5%;/* margem baixo. */
+}
+.container ul:nth-child(3) {
+    list-style: none; /* permite definir todas as propriedades de estilo de lista de uma só vez. */
+    display: flex; /*  para criar um contêiner flexível. */
+    flex-direction: column; /* deixa um padrão para um elemento ficar em baixo do outro. */
+    width: 100%; /* determina a largura da área de conteúdo de um elemento. */
+    flex: 1; /* padroniza o tamanho da ul. */ 
+    gap: 1rem; /* define os espaços (gutters) entre as linhas e colunas. */ 
+    margin-bottom: 20%; /*  define a margin area na parte inferior de um elemento. */ 
+}
+.container ul:nth-child(3) li {
+    text-align: center; /* texto centralizado. */ 
+    border: 2px solid var(--blue);
+    border-radius: 10px; /* deixar bordar redondas. */ 
+    cursor: pointer; /* para mudar o cursor. */
+    padding: .8rem; /* define uma a distância entre o conteúdo de um elemento e suas bordas. */
+    font-weight: 600; /*  especifica o peso ou a intensidade da fonte (ex.: negrito).  */
+    font-size: 15pt; /*  alterar o tamanho da fonte de seus textos. */
+}
+.container ul:nth-child(3) li:hover {
+    scale: 1.02; /* estilização do hover. */
+    background-color: #4f5b91; /* cor hover. */
+    transition: .6s; /* tempo de duração cor. */
+}
+.container ul:nth-child(4) {
+    list-style: none; /* permite definir todas as propriedades de estilo de lista de uma só vez.  */
+    display: flex; /*  para criar um contêiner flexível. */
+    gap: 1.5rem ; /* define os espaços (gutters) entre as linhas e colunas. */ 
+    justify-content: center; /* Controla o alinhamento horizontal. */
+    flex-wrap: nowrap; /* deixar em uma unica linha. */
+}
+.container ul:nth-child(4) li {
+    transition: 0.2 ;
+    scale: 0.5; /* estilização do hover. */
+}
+.container ul:nth-child(4) li:hover {
+    scale: 0.7;
+}
+
+
+
